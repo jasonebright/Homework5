@@ -1,6 +1,7 @@
 package com.example.homework5;
 
 //import android.support.v4.view.GestureDetectorCompat;
+import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
@@ -40,7 +41,7 @@ public class TouchListener implements View.OnTouchListener {
             case MotionEvent.ACTION_CANCEL:
                 for(int i= 0, size = motionEvent.getPointerCount(); i< size; i++){
                     int id = motionEvent.getPointerId(i);
-                    //drawActivity.removePath(id);
+                    drawActivity.removePath(id);
                 }
                 break;
         }
@@ -52,13 +53,13 @@ public class TouchListener implements View.OnTouchListener {
     private class MyGestureListener extends GestureDetector.SimpleOnGestureListener {
         @Override
         public boolean onDoubleTap(MotionEvent e) {
-            drawActivity.onDoubleTap();
+            drawActivity.onDoubleTap(e.getX(), e.getY());
             return super.onDoubleTap(e);
         }
 
         @Override
         public void onLongPress(MotionEvent e) {
-            drawActivity.onLongPress();
+            drawActivity.onLongPress(e.getX(), e.getY());
             super.onLongPress(e);
         }
     }

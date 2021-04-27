@@ -15,4 +15,77 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+    <Button
+        android:id="@+id/buttonRed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#FF0000"
+        android:text="Red"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/buttonBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="80dp"
+        android:layout_toEndOf="@+id/buttonRed"
+        android:backgroundTint="#0027FF"
+        android:text="Blue"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/buttonGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="80dp"
+        android:layout_toEndOf="@+id/buttonBlue"
+        android:backgroundTint="#136C17"
+        android:text="Green"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/buttonUndo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/white"
+        android:text="Undo"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/buttonUndo"
+        android:backgroundTint="@color/white"
+        android:text="Clear"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/buttonDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toEndOf="@+id/buttonClear"
+        android:backgroundTint="@color/white"
+        android:text="Done"
+        android:textColor="@color/black" />
+
+
 </RelativeLayout>
