@@ -16,11 +16,11 @@
 - [x] (10pts) After finishing one picture, the user can take anotehr pciture and edit it again
 - [x] (10pts) Bug free
 - [x] (10pts) Submission follows the guidlines, and README file is complete
-Bonus
-- [ ] (10pts) Animated Icons
-- [ ] (10pts) Save to gallery
-- [x] (10pts) undo both line-drawing and icon-adding
-- [ ] (10pts) Pencil Sound
+#### Bonus
+- [ ] (5pts) Animated Icons
+- [ ] (5pts) Save to gallery
+- [x] (5pts) undo both line-drawing and icon-adding
+- [ ] (5pts) Pencil Sound
 
 
 
