@@ -1,9 +1,9 @@
-# Flix
-Flix is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
+# Picture Canvas
+
 
 ---
 
-## Flix
+## Picture Canvas
 
 ### User Stories
 
@@ -27,7 +27,11 @@ Bonus
 ### App Walkthough GIF
 `TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `YOUR_GIF_URL_HERE`. Make sure the gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after after adding gif)
 
-<img src="YOUR_GIF_URL_HERE" width=250><br>
+<img src="https://github.com/jasonebright/Homework5/blob/master/takePicture.gif" width=250><br>
+<img src="https://github.com/jasonebright/Homework5/blob/master/drawing.gif" width=250><br>
+<img src="https://github.com/jasonebright/Homework5/blob/master/gestures.gif" width=250><br>
+<img src="https://github.com/jasonebright/Homework5/blob/master/undo.gif" width=250><br>
+<img src="https://github.com/jasonebright/Homework5/blob/master/clear.gif" width=250><br>
 
 ### Notes
 Describe any challenges encountered while building the app.
