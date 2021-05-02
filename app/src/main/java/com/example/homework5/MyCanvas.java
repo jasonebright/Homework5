@@ -88,6 +88,7 @@ public class MyCanvas extends View {
                 paintList.remove(paintList.size() - 1);
                 pathList.remove(pathList.size() - 1);
                 longPress = false;
+
             }
             if(doubleTap){
                 removeObject.remove(removeObject.size() -1);
