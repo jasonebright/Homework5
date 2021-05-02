@@ -24,6 +24,7 @@ public class MyCanvas extends View {
     private ArrayList<Path> pathList =new ArrayList<>();
     private ArrayList<Paint> paintList =new ArrayList<>();
     private ArrayList<Boolean> removeObject = new ArrayList<>();
+    boolean longPress, doubleTap = false;
 
     public MyCanvas(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -82,6 +83,22 @@ public class MyCanvas extends View {
             Log.i("Added",""+ pathList.size() + "  " + pathList);
             removeObject.add(true);
             activePaths.remove(id);
+            if(longPress){
+                removeObject.remove(removeObject.size() -1);
+                paintList.remove(paintList.size() - 1);
+                pathList.remove(pathList.size() - 1);
+                longPress = false;
+            }
+            if(doubleTap){
+                removeObject.remove(removeObject.size() -1);
+                paintList.remove(paintList.size() - 1);
+                pathList.remove(pathList.size() - 1);
+                removeObject.remove(removeObject.size() -2);
+                paintList.remove(paintList.size() - 1);
+                pathList.remove(pathList.size() - 1);
+                doubleTap = false;
+
+            }
         }
         invalidate();
     }
@@ -123,11 +140,13 @@ public class MyCanvas extends View {
         Icon temp = new Icon(vt, x, y);
         iconList.add(temp);
         removeObject.add(false);
+        doubleTap = true;
     }
     public void longPress(float x, float y) {
         Icon temp = new Icon(hokieBird, x, y);
         iconList.add(temp);
         removeObject.add(false);
+        longPress = true;
     }
 
     private Paint getNewPaintPen(int color) {
